@@ -15,16 +15,16 @@ Here is the directory structure for the significant parts. At the moment the `co
     |
     | - config (Mapped to host)
     |   | - store.json / ... (Recommended location to configure store.json)
-    |   | - config.yml (Gets coppied to parent directory at runtime)
-    |   | - OSM.License (Gets coppied to parent directory at runtime)
-    |   | - ssl_cert (Optional if SSL not required)
-    |   \ - ssl_key (Optional if SSL not required)
+    |   | - config.yml       (Gets coppied to parent directory at runtime)
+    |   | - OSM.License      (Gets coppied to parent directory at runtime)
+    |   | - ssl_cert         (Optional if SSL not required)
+    |   \ - ssl_key          (Optional if SSL not required)
     |
     \ - server
         | - accServer.exe
         | - _manager / ...
         | - cfg / ...
-        | - log / ... (Optionally mapped to host)
+        | - log / ...     (Optionally mapped to host)
         \ - results / ... (Optionally mapped to host)
 
 ## Folders to mount
