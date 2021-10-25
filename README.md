@@ -11,25 +11,26 @@ Here is the directory structure for the significant parts. At the moment the `co
     C:\acc-server\
     |
     | - acc-server-manager.exe
+    | - entrypoint.cmd
     |
-    | - config
-    |   | - store.json / ...
-    |   | - config.yml
-    |   | - OSM.License
-    |   | - ssl_cert
-    |   \ - ssl_key
+    | - config (Mapped to host)
+    |   | - store.json / ... (Recommended location to configure store.json)
+    |   | - config.yml (Gets coppied to parent directory at runtime)
+    |   | - OSM.License (Gets coppied to parent directory at runtime)
+    |   | - ssl_cert (Optional if SSL not required)
+    |   \ - ssl_key (Optional if SSL not required)
     |
     \ - server
         | - accServer.exe
         | - _manager / ...
         | - cfg / ...
-        | - log / ...
-        \ - results / ...
+        | - log / ... (Optionally mapped to host)
+        \ - results / ... (Optionally mapped to host)
 
 ## Folders to mount
  
 - Required:
-  - `C:\acc-server\config` - Mount this location to a folder containing your customised config.yml, OSM.License file and you SSL cert and key if using https.
+  - `C:\acc-server\config` - Mount this location to a folder containing your customised `config.yml`, `OSM.License` file and you SSL cert and key if using https.
 - Optional:
   - `C:\acc-server\server\log` - Mount this location if you want to be able to access the server logs.
   - `C:\acc-server\server\results` - Mount this location if you want to be able to access server race results.
