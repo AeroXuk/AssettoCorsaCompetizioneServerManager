@@ -32,8 +32,8 @@ Expand-Archive .\accServer_1.7.12.zip
 #
 # Copy downloaded and extracted files into build image
 #
-cp .\acc-server-manager_v1.1.3\README.txt .\image\config\
-cp .\acc-server-manager_v1.1.3\windows\config.yml .\image\config\
+cp .\acc-server-manager_v1.1.3\README.txt .\image\
+cp .\acc-server-manager_v1.1.3\windows\config.yml .\image\
 cp .\acc-server-manager_v1.1.3\windows\acc-server-manager.exe .\image\
 cp .\accServer_1.7.12\accServer.exe .\image\server\
 
