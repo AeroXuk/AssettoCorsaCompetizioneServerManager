@@ -19,22 +19,22 @@ cd .\bin\
 #
 # Download Sources
 #
-wget https://dl.emperorservers.com/acc/v1.1.3/acc-server-manager_v1.1.3.zip -OutFile acc-server-manager_v1.1.3.zip
+wget https://dl.emperorservers.com/acc/v1.1.4/acc-server-manager_v1.1.4.zip -OutFile acc-server-manager_v1.1.4.zip
 wget https://www.assettocorsa.net/forum/index.php?attachments/accserver_1-7-12-zip.151290/ -OutFile accServer_1.7.12.zip
 wget https://aka.ms/vs/16/release/vc_redist.x64.exe -OutFile vc_redist.x64.exe
 
 #
 # Extract Zip Archives
 #
-Expand-Archive .\acc-server-manager_v1.1.3.zip
+Expand-Archive .\acc-server-manager_v1.1.4.zip
 Expand-Archive .\accServer_1.7.12.zip
 
 #
 # Copy downloaded and extracted files into build image
 #
-cp .\acc-server-manager_v1.1.3\README.txt .\image\
-cp .\acc-server-manager_v1.1.3\windows\config.yml .\image\
-cp .\acc-server-manager_v1.1.3\windows\acc-server-manager.exe .\image\
+cp .\acc-server-manager_v1.1.4\README.txt .\image\
+cp .\acc-server-manager_v1.1.4\windows\config.yml .\image\
+cp .\acc-server-manager_v1.1.4\windows\acc-server-manager.exe .\image\
 cp .\accServer_1.7.12\accServer.exe .\image\server\
 
 #
