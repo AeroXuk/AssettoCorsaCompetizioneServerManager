@@ -11,7 +11,6 @@ Here is the directory structure for the significant parts. At the moment the `co
     C:\acc-server\
     |
     | - acc-server-manager.exe
-    | - entrypoint.cmd
     |
     | - config (Mapped to host)
     |   | - store.json / ... (Recommended location to configure store.json)

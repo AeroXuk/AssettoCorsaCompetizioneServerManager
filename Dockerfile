@@ -39,4 +39,5 @@ COPY bin/image/ C:/acc-server/
 #
 # Start the Server via a runtime entrypoint script.
 #
-ENTRYPOINT [ "entrypoint.cmd" ]
+ENTRYPOINT [ "acc-server-manager.exe" ]
+CMD [ "-config", "config\\config.yml", "-license", "config\\OSM.License" ]
